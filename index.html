@@ -3,19 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <meta
+        name="description"
+        content="Megha Sinha — Software Engineer building reliable backend and cloud systems."
+    >
+
+    <title>Megha Sinha | Software Engineer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome</h1>
+    <header class="site-header">
+        <nav class="container navigation">
+            <a class="logo" href="#home">MS</a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                Menu
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <p>Hello, World!</p>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow">Software Engineer</p>
+
+                <h1>
+                    Hi, I’m Megha Sinha.
+                    <span>I build reliable backend and cloud systems.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I work on distributed backend services, workflow orchestration,
+                    production reliability, observability, and cloud infrastructure.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary-button" href="#projects">
+                        View my work
+                    </a>
+
+                    <a
+                        class="button secondary-button"
+                        href="https://github.com/Meghasinha234"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container narrow-container">
+                <p class="section-label">About</p>
+                <h2>Engineering dependable systems at scale</h2>
+
+                <p>
+                    I’m a software engineer focused on backend and cloud systems.
+                    My work includes subscription lifecycle workflows, cross-region
+                    processing, downstream integrations, deployment readiness, and
+                    production reliability.
+                </p>
+
+                <p>
+                    I enjoy solving problems involving distributed workflows,
+                    retries, failure recovery, observability, automation, and
+                    operational resilience.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section alternate-section">
+            <div class="container">
+                <p class="section-label">Skills</p>
+                <h2>Technologies and areas of focus</h2>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Backend Engineering</h3>
+                        <p>
+                            APIs, service architecture, business workflows,
+                            integrations, and asynchronous processing.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Distributed Systems</h3>
+                        <p>
+                            Retries, idempotency, concurrency, failure handling,
+                            cross-region processing, and consistency.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Cloud Infrastructure</h3>
+                        <p>
+                            Cloud control planes, deployment readiness,
+                            infrastructure automation, and service operations.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Production Reliability</h3>
+                        <p>
+                            Metrics, logs, alerts, debugging, incident prevention,
+                            and non-happy-path system behavior.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <p class="section-label">Experience</p>
+                <h2>Professional experience</h2>
+
+                <article class="experience-card">
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <p class="company">Oracle Cloud Infrastructure</p>
+                    </div>
+
+                    <div class="experience-details">
+                        <p>
+                            Building backend cloud services for subscription
+                            lifecycle management and distributed workflow execution.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Develop backend services and lifecycle workflows.
+                            </li>
+                            <li>
+                                Improve cross-region processing and downstream
+                                integrations.
+                            </li>
+                            <li>
+                                Strengthen observability, deployment readiness, and
+                                production reliability.
+                            </li>
+                            <li>
+                                Investigate retries, delayed workflows, dependency
+                                failures, and incomplete production signals.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section alternate-section">
+            <div class="container">
+                <p class="section-label">Projects</p>
+                <h2>Selected work</h2>
+
+                <div class="card-grid">
+                    <article class="card project-card">
+                        <p class="project-type">Portfolio</p>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A responsive personal website built with HTML, CSS,
+                            JavaScript, and GitHub Pages.
+                        </p>
+                        <a
+                            href="https://github.com/Meghasinha234/Meghasinha234.github.io"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View repository
+                        </a>
+                    </article>
+
+                    <article class="card project-card">
+                        <p class="project-type">Coming soon</p>
+                        <h3>Backend Systems Project</h3>
+                        <p>
+                            A future project demonstrating workflow orchestration,
+                            failure recovery, and observability.
+                        </p>
+                    </article>
+
+                    <article class="card project-card">
+                        <p class="project-type">Coming soon</p>
+                        <h3>Cloud Automation Project</h3>
+                        <p>
+                            A future project focused on infrastructure automation,
+                            deployment safety, and operational tooling.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container narrow-container">
+                <p class="section-label">Contact</p>
+                <h2>Let’s connect</h2>
+
+                <p>
+                    You can find my work and follow my projects on GitHub.
+                </p>
+
+                <div class="hero-actions">
+                    <a
+                        class="button primary-button"
+                        href="https://github.com/Meghasinha234"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Visit GitHub
+                    </a>
+
+                    <a
+                        class="button secondary-button"
+                        href="mailto:your-email@example.com"
+                    >
+                        Email me
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Website</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Megha Sinha</p>
+            <a href="#home">Back to top</a>
+        </div>
     </footer>
 </body>
 </html>
