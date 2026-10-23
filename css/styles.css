@@ -424,4 +424,16 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Make whoami clickable */
+.whoami-link {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.whoami-link:hover {
+    color: var(--accent-secondary);
+    text-shadow: 0 0 8px rgba(0, 255, 127, 0.5);
+}
+
 /*
